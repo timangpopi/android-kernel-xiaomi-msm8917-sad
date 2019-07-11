@@ -1950,20 +1950,6 @@ CONFIG_SERIAL_MSM_SMD=y
 # Diag Support
 #
 CONFIG_DIAG_CHAR=y
-
-#
-# DIAG traffic over USB
-#
-CONFIG_DIAG_OVER_USB=y
-
-#
-# HSIC/SMUX support for DIAG
-#
-# CONFIG_TTY_PRINTK is not set
-# CONFIG_HVC_DCC is not set
-# CONFIG_IPMI_HANDLER is not set
-CONFIG_HW_RANDOM=y
-# CONFIG_HW_RANDOM_TIMERIOMEM is not set
 CONFIG_HW_RANDOM_MSM_LEGACY=y
 # CONFIG_APPLICOM is not set
 
