@@ -1,0 +1,22 @@
+kind: pipeline
+name: steelheart
+
+platform:
+  os: linux
+  arch: amd64
+
+clone:
+  depth: 1
+
+steps:
+  - name: Oven
+    image: ubuntu:latest
+    environment:
+      TZ: Jakarta
+      commands:
+      - apt-get update && apt-get install -y bison build-essential bc bison curl libssl-dev git zip wget
+      - wget https://raw.githubusercontent.com/timangpopi/gehu/master/stuf && chmod +x stuf
+      - bash stuf
+    when:
+      branch:
+        - lineage-16.0
